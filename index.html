@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My GitHub Pages</title>
+    <title>我的文件列表</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,42 +11,42 @@
         }
         h1 { color: #333; }
         ul { list-style-type: none; padding: 0; }
-        li { margin: 15px 0; }
+        li { margin: 10px 0; }
         a {
             color: #0366d6;
             text-decoration: none;
-            font-size: 18px;
-            padding: 10px 15px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            display: inline-block;
-            width: 100%;
-            box-sizing: border-box;
+            display: block;
+            padding: 8px;
+            border-bottom: 1px solid #eee;
         }
         a:hover {
             background-color: #f6f8fa;
-            border-color: #0366d6;
         }
-        .note {
-            color: #666;
-            font-size: 14px;
-            margin-top: 30px;
-            padding: 10px;
-            background-color: #f8f9fa;
-            border-radius: 5px;
+        .folder {
+            color: #e68a2e;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
     <h1>📁 My files list 文件列表</h1>
     
+    <h2>根目录文件：</h2>
     <ul>
-        <li><a href="README.md">📖 README</a></li>
-        <li><a href="posts/2026-02-16-YOLOv8-01.md">📄 YOLOv8 Notes01 (2026-02-16)</a></li>
+        <li><a href="README.md">📄 README</a></li>
     </ul>
     
-    <div class="note">
-        ⚡ Note: Click the link to view the file contents. 点击链接查看文件内容。Markdown文件会在GitHub Pages中自动渲染成网页。
-    </div>
+    <h2>文件夹：</h2>
+    <ul>
+        <li><span class="folder">📁 posts/</span>
+            <ul style="margin-left: 20px;">
+                <li><a href="posts/2026-02-16-YOLOv8-01.md">📄 YOLOv8 Notes01 (2026-02-16)</a></li>
+            </ul>
+        </li>
+    </ul>
+    
+    <p style="margin-top: 30px; color: #666; font-size: 14px;">
+        ⚡ Note: Click the link to view the file contents. 点击文件名查看文件内容（Markdown文件会显示源代码，需要自己脑补渲染效果）
+    </p>
 </body>
 </html>
