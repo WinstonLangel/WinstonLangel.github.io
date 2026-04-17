@@ -1,4 +1,4 @@
-# 01 - STM32 Development Environment Setup Log / STM32 开发环境搭建日志
+# 01 - STM32 Development Environment Setup Log
 > 搭建RM战队考核所需的环境
 
 **Date / 日期**: 2026-04-18  
@@ -105,35 +105,40 @@ Keil 需要安装对应芯片的支持包才能识别 STM32F103C8T6。
   **My Solution 3**: 尝试使用 `www.stmcu.com.cn` 中国区官网，下载流程可能更简化。
 
 - **Problem2**: Keil 官网下载时报 HTTP 500 错误，页面无法访问
- **My Solution 1**: 清除浏览器缓存，更换浏览器（如 Chrome、Edge）重试。
 
- **My Solution 2**: 修改 DNS 为公共 DNS（如 `114.114.114.114`），刷新网络后再访问。
+  **My Solution 1**: 清除浏览器缓存，更换浏览器（如 Chrome、Edge）重试。
+
+  **My Solution 2**: 修改 DNS 为公共 DNS（如 `114.114.114.114`），刷新网络后再访问。
  
- **My Solution 3**: 使用第三方网盘下载稳定版本的 MDK 安装包（如 MDK538）。
+  **My Solution 3**: 使用第三方网盘下载稳定版本的 MDK 安装包（如 MDK538）。
 
 - **Problem3**: Keil 社区版联网激活反复失败，报错 "Error processing response from the license server"。我在这里报错卡了一万年，气死我了。。。
- **My Solution 1**: 彻底关闭 Windows Defender 防火墙、实时保护、云提供的保护。
 
- **My Solution 2**: 确保 Keil 以管理员身份运行。
+  **My Solution 1**: 彻底关闭 Windows Defender 防火墙、实时保护、云提供的保护。
+
+  **My Solution 2**: 确保 Keil 以管理员身份运行。
  
- **My Solution 3**: **最终解决方案**：放弃联网激活，改用注册机离线激活（详见第 6 节）。
+  **My Solution 3**: **最终解决方案**：放弃联网激活，改用注册机离线激活（详见第 6 节）。
 
 - **Problem4**: Pack Installer 在线下载芯片支持包持续超时
- **My Solution 1**: 从 Keil 官网 `www.keil.com/dd2/Pack/` 手动下载 `.pack` 文件，双击离线安装。
 
- **My Solution 2**: 从网盘下载他人分享的已解压 Pack 文件夹，直接复制到 `Keil_v5\Packs` 目录下。
+  **My Solution 1**: 从 Keil 官网 `www.keil.com/dd2/Pack/` 手动下载 `.pack` 文件，双击离线安装。
+
+  **My Solution 2**: 从网盘下载他人分享的已解压 Pack 文件夹，直接复制到 `Keil_v5\Packs` 目录下。
 
 - **Problem5**: 注册机压缩包无法解压，提示“拒绝访问存档”
- **My Solution 1**: 将压缩包所在文件夹加入 Windows Defender 的排除项中，防止实时保护拦截。
 
- **My Solution 2**: 使用 7-Zip 等第三方解压软件代替 Windows 自带解压功能。
+  **My Solution 1**: 将压缩包所在文件夹加入 Windows Defender 的排除项中，防止实时保护拦截。
+
+  **My Solution 2**: 使用 7-Zip 等第三方解压软件代替 Windows 自带解压功能。
  
- **My Solution 3**: 寻找无需解压、可直接运行的 `.exe` 版本注册机。
+  **My Solution 3**: 寻找无需解压、可直接运行的 `.exe` 版本注册机。
 
 - **Problem6**: 在 Keil 中打开工程后找不到 main.c 文件
- **My Solution 1**: 在 Keil 左侧 Project 窗口中，手动展开 `Application/User` 文件夹，双击 `main.c` 即可。
 
- **My Solution 2**: 若文件夹内确实没有，右键 `Application/User` → `Add Existing Files to Group...`，手动添加 `Core\Src\main.c`。
+  **My Solution 1**: 在 Keil 左侧 Project 窗口中，手动展开 `Application/User` 文件夹，双击 `main.c` 即可。
+
+  **My Solution 2**: 若文件夹内确实没有，右键 `Application/User` → `Add Existing Files to Group...`，手动添加 `Core\Src\main.c`。
 
 ---
 
