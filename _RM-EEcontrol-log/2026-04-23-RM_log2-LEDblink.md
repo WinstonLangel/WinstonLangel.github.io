@@ -219,14 +219,14 @@ HAL_Delay(500);                          // 延时 500ms
 | Knowledge Point | 在 RM 考核项目中的应用 |
 |---------------|----------------------------|
 | Java 环境安装 | CubeMX 运行前提 |
-| STM32CubeMX | 安装与配置 | 图形化生成 Keil 工程 |
-Keil MDK 安装与激活 代码编译、下载的核心工具
-STM32F1 Pack 安装 让 Keil 识别 STM32F103C8T6
-SWD 接线 程序烧录的物理通道
-GPIO 输出配置 控制 LED、电机方向引脚的基础
-HAL 库点灯代码 嵌入式“Hello World”
-编译、下载流程 每次修改代码后的固定操作
-复位大法、Clean Targets 解决 80% 下载失败问题的万能钥匙
+| STM32CubeMX 安装与配置 | 图形化生成 Keil 工程 |
+| Keil MDK 安装与激活 | 代码编译、下载的核心工具 |
+| STM32F1 Pack 安装 | 让 Keil 识别 STM32F103C8T6 |
+| SWD 接线 | 程序烧录的物理通道 |
+| GPIO 输出配置 | 控制 LED、电机方向引脚的基础 |
+| HAL 库点灯代码 | 嵌入式“Hello World” |
+| 编译、下载流程 | 每次修改代码后的固定操作 |
+| 复位大法、Clean Targets | 解决 80% 下载失败问题的万能钥匙 |
 
 ---
 
@@ -245,38 +245,28 @@ while (1)
 
 ---
 
-🔗 Some Resources | 相关资源
+## 🔗 Some Resources | 相关资源
 
-· STM32CubeMX 官方下载
-· Keil MDK 官方下载
-· ST-Link 驱动下载
-· B站 中科大RM电控教程
-· 江协科技 STM32 入门教程
+- [STM32CubeMX 官方下载](https://www.st.com/en/development-tools/stm32cubemx.html)
+- [Keil MDK 官方下载](https://www.keil.arm.com/mdk-community/)
+- [ST-Link 驱动下载](https://www.st.com.cn/zh/development-tools/stsw-link009.html)
+- [B站 中科大RM电控教程](https://space.bilibili.com/337732684)
+- [江协科技 STM32 入门教程](https://b23.tv/czHIfdu)
 
 ---
 
-> Uptime: +2 Days
-
+> Uptime: +1 Days
+>
 > Status: LED is blinking... Finally!!!
 
 ---
-Learning Date: 2026-04-19
 
-Current Projects: RM 电控组考核（PID 电机控制） | 智视寻迹 | SuperAgent
+*Learning Date: 2026-04-23*
 
-Future Direction: 嵌入式视觉 / 机器人感知
+*Current Projects: RM 电控组考核（PID 电机控制） | 智视寻迹 | SuperAgent*
 
-Log: STM32-Learning-01
+*Future Direction: 嵌入式视觉 / 机器人系统 / 智能车*
 
-```
-· Java (JDK 8): https://www.java.com/zh-CN/download/
-· STM32CubeMX:
-  · 中国区官网: https://www.stmcu.com.cn/
-  · 国际官网: https://www.st.com/en/development-tools/stm32cubemx.html
-· Keil MDK:
-  · 社区版(推荐): https://www.keil.arm.com/mdk-community/
-  · 产品下载页: https://www.keil.com/download/product/
-· ST-Link 驱动:
-  · STSW-LINK009 (官方): https://www.st.com.cn/zh/development-tools/stsw-link009.html
-· B站 中科大RM电控教程: https://space.bilibili.com/337732684
-· B站 江协科技STM32入门教程: https://b23.tv/czHIfdu
+*Log: STM32-Learning-01*
+
+---
