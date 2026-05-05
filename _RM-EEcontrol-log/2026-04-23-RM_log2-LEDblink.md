@@ -255,7 +255,7 @@ while (1)
 
 ---
 
-> Uptime: +1 Days
+> Uptime: +1 Day
 >
 > Status: LED is blinking... Finally!!!
 
