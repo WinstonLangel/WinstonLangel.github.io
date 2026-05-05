@@ -159,7 +159,7 @@ PID增量(Δu) → 累加到上次PWM值 → 新的PWM值(pidOutput)
 typedef struct {
     float Kp, Ki, Kd;
     float targetVal;           // 目标速度
-    float err, errLast, errPre; // 三次误差
+    float err, errLast, errPre; // 三次误差（一次现在的，两次以前的），用于计算增量，增量法PID确实大大提高了稳定性
     float outputVal;            // 输出PWM值
 } PID_TypeDef;
 ```
@@ -359,7 +359,6 @@ float PID_Compute(PID_TypeDef *pid, float actual) {
 ## 🔗 Some Resources | 相关资源
 
 - [B站 中科大RM电控教程](https://space.bilibili.com/337732684)
-- [B站 江协科技STM32入门教程](https://b23.tv/czHIfdu)
 - [VOFA+ 官网下载](https://www.vofa.plus)
 - [TB6612 官方数据手册](https://toshiba-semicon-storage.com/cn/semiconductor/product/motor-driver-ics/brushed-dc-motor-driver-ics/detail.TB6612FNG.html)
 
