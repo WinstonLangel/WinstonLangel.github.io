@@ -365,9 +365,9 @@ float PID_Compute(PID_TypeDef *pid, float actual) {
 
 ---
 
-Uptime: +1 Day
-
-Status: Motor is running stably!!! PID conquered!!!
+> Uptime: +1 Day
+>
+> Status: Yep, Still Running...
 
 ---
 
