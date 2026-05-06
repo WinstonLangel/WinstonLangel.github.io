@@ -220,7 +220,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
 <img width="2376" height="1080" alt="微信图片_20260507001940_755_2" src="https://github.com/user-attachments/assets/0596b3a1-732e-420f-b4c1-f22edc46def7" />
 
 - 大功告成！！终于匀速转动了！
-以下是视频链接。
+诚邀诸君共赏 :)
 
 https://github.com/user-attachments/assets/083c1657-41d7-48df-82b6-4d0e1abfe906
 
