@@ -215,6 +215,15 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
 | Ki | 消除稳态误差 | 0.0 ~ 0.1 | 太小：仍有误差。太大：超调巨大 |
 | Kd | 抑制震荡 | 0.0 ~ 0.05 | 对噪声敏感，速度环通常不用 |
 
+**项目成果展示：**
+- 电机及其他模块。还不会合理布线的结果。。。一团乱麻
+<img width="2376" height="1080" alt="微信图片_20260507001940_755_2" src="https://github.com/user-attachments/assets/0596b3a1-732e-420f-b4c1-f22edc46def7" />
+
+- 大功告成！！终于匀速转动了！
+以下是视频链接。
+
+https://github.com/user-attachments/assets/083c1657-41d7-48df-82b6-4d0e1abfe906
+
 **项目应用场景**：调参是 PID 的核心环节。实际工程中很少靠公式算，都是先找到不抖的 Kp，再微调 Ki，最后视情况加 Kd。这一套调参思路在后续做云台控制、小车底盘控制时同样适用。
 
 ---
